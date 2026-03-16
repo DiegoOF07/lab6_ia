@@ -1,4 +1,5 @@
-from Connect4 import Connect4, PLAYER_TAKEN, IA_TAKEN, ROWS, COLS, EMPTY_SPACE
+from connect4 import Connect4, PLAYER_TAKEN, IA_TAKEN, ROWS, COLS, EMPTY_SPACE
+import random
 
 WIN_SCORE = 1000
 LOSE_SCORE = -1000
@@ -178,3 +179,7 @@ def get_best_move_alphabeta(game: Connect4, depth):
  
     print("Nodos visitados (Alfa-Beta):", nodes_visited)
     return best_move
+
+def get_random_move(game: Connect4):
+    valid_moves = game.get_valid_moves()
+    return random.choice(valid_moves)
