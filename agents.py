@@ -1,4 +1,4 @@
-from connect4 import Connect4, PLAYER_TAKEN, IA_TAKEN, ROWS, COLS, EMPTY_SPACE
+from Connect4 import Connect4, PLAYER_TAKEN, IA_TAKEN, ROWS, COLS, EMPTY_SPACE
 
 WIN_SCORE = 1000
 LOSE_SCORE = -1000

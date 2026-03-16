@@ -1,6 +1,5 @@
-from connect4 import Connect4, PLAYER_TAKEN, IA_TAKEN
+from Connect4 import Connect4, PLAYER_TAKEN, IA_TAKEN
 from agents import get_best_move_alphabeta
- 
  
 def main():
     game  = Connect4()
